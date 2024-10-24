@@ -1,0 +1,34 @@
+npx @react-native-community/cli init your-project-name
+
+cd your-project-name
+
+npx react-native run-android
+
+choose a for android
+
+if any err occured while openeig the RDV
+run 
+
+npx react-native doctor
+to fix errors
+
+
+
+if u have an older project and u wanted to create a new one 
+but its gets an error init deprecated in the name of 
+the old folder the run 
+npm -g list npx
+npm install -g npm
+npm install -g npx
+
+then relance 
+
+npm uninstal -g react-native-cli @react-native-community/cli
+
+npm install -g react-native-cli
+npx @react-native-community/cli init your-project-name
+
+
+to configur emulator adb
+https://www.youtube.com/watch?v=LGEHAwyVXtI&ab_channel=coursecode
+

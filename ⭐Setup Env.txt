@@ -1,0 +1,63 @@
+folow the below steps if u have any issue see the bleow link
+it explain it all but i saw it in purpose of sdk problem
+https://www.youtube.com/watch?v=8ejuHsaXiwU&ab_channel=GhostTogether
+
+
+------ React code zone
+vs as a code space
+and our mobile phone as a changes render device
+u need jdk - SDK - choco(chocolately) and node js
+
+installation proccess setup on windows 
+https://reactnative.dev/docs/set-up-your-environment
+
+
+---- JDK installation
+Microsoft open jdk installation
+the version based on the react native installation compatibilty
+example : miscrosoft-openjdk17
+
+to check version
+java --version
+javac -version
+
+
+https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17
+to check version java --version
+
+---- SDK installation
+we dont need android studio but it contains the sdk we need that as istalls it by default
+https://developer.android.com/studio
+on ur search system serch or variable envirement
+Click on Change my environment variables
+Click on New... 
+to create a new ANDROID_HOME user variable that points to the path to your Android SDK:
+C:\Users\LAAGUILI MOHAMED\AppData\Local\Android\Sdk
+variable name : ANDROID_HOME
+variable value: C:\Users\LAAGUILI MOHAMED\AppData\Local\Android\Sdk
+TO ENSURE sdk added to path system run in power shell
+Get-ChildItem -Path Env:\
+u will see the ANDROID_HOME adede
+then click on path variable that contain many directories add to it 
+%LOCALAPPDATA%\Android\Sdk\platform-tools
+C:\Users\LAAGUILI MOHAMED\AppData\Local\Android\Sdk\platform-tools
+and save
+
+---- chocolately installation
+open terminal or shell as administrator and run
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; `
+[System.Net.ServicePointManager]::SecurityProtocol = `
+[System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+to check version
+choco --version
+
+choco install -y nodejs-lts openjdk11
+
+---- node installation
+https://nodejs.org/en
+
+to check version
+node -v
